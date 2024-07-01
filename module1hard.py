@@ -1,4 +1,4 @@
-grades = [[5, 3, 3, 5, 4],
+grades = [[5, 3, 3, 5, 4, 5, 3],
           [2, 2, 2, 3],
           [4, 5, 5, 2],
           [4, 4, 2],
@@ -10,27 +10,27 @@ students = {'Johnny',
             'Aaron'}
 
 student_1_point = grades[0]
-total_points_student_1 = student_1_point[0] + student_1_point[1] + student_1_point[2] + student_1_point[3] + student_1_point[4]
+total_points_student_1 = sum(student_1_point)
 number_of_ratings_student_1 = len(student_1_point)
 gta_student_1 = round(total_points_student_1 / number_of_ratings_student_1, 2)
 
 student_2_point = grades[1]
-total_points_student_2 = student_2_point[0] + student_2_point[1] + student_2_point[2] + student_2_point[3]
+total_points_student_2 = sum(student_2_point)
 number_of_ratings_student_2 = len(student_2_point)
 gta_student_2 = round(total_points_student_2 / number_of_ratings_student_2, 2)
 
 student_3_point = grades[2]
-total_points_student_3 = student_3_point[0] + student_3_point[1] + student_3_point[2] + student_3_point[3]
+total_points_student_3 = sum(student_3_point)
 number_of_ratings_student_3 = len(student_3_point)
 gta_student_3 = round(total_points_student_2 / number_of_ratings_student_3, 2)
 
 student_4_point = grades[3]
-total_points_student_4 = student_4_point[0] + student_4_point[1] + student_4_point[2]
+total_points_student_4 = sum(student_4_point)
 number_of_ratings_student_4 = len(student_4_point)
 gta_student_4 = round(total_points_student_4 / number_of_ratings_student_4, 2)
 
 student_5_point = grades[4]
-total_points_student_5 = student_5_point[0] + student_5_point[1] + student_5_point[2] + student_5_point[3] + student_5_point[4]
+total_points_student_5 = sum(student_5_point)
 number_of_ratings_student_5 = len(student_5_point)
 gta_student_5 = round(total_points_student_5 / number_of_ratings_student_5, 2)
 
