@@ -3,11 +3,11 @@ import time
 
 
 class Knight(threading.Thread):
-    def __init__(self, name, power, number_of_enemies):
+    def __init__(self, name, power):
         super().__init__()
         self.name = name
         self.power = power
-        self.number_of_enemies = number_of_enemies
+        self.number_of_enemies = 100
         self.days_of_battle = 0
 
     def run(self):
@@ -19,12 +19,12 @@ class Knight(threading.Thread):
                 break
             print(f'{self.name} сражается {self.days_of_battle} день(дня)..., '
                   f'осталось {self.number_of_enemies} воинов.')
-            time.sleep(3)
+            time.sleep(1)
         print(f'{self.name} одержал победу спустя {self.days_of_battle} дней(дня)!')
 
 
-knight_1 = Knight('Artur', 10, 50)
-knight_2 = Knight('Richard', 25, 100)
+knight_1 = Knight('Artur', 10)
+knight_2 = Knight('Richard', 25)
 
 knight_1.start()
 knight_2.start()
